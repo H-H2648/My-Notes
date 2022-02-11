@@ -14,3 +14,16 @@ this looks at the local Dockefile (as established at '.' at the end) and builds 
 After building a container, we can push it to Google Cloud Platform (so that it can be ran on the cloud).
 
 An example of how this is done is on push.sh (PROVIDE LINK HERE)
+
+
+## Troubleshooting
+
+### Pushing
+
+Sometimes there may be a problem pushing docker image. This sould be solved by (mac)
+
+```
+gcloud auth configure-docker
+```
+
+The Docker documentation claims we don't need to do this on mac but this solved the problem.

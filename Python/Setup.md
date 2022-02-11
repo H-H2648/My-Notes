@@ -54,6 +54,8 @@ COPY ./src ./src
 
 Please get pipenv (PROVIDE LINK HERE)
 
+As can be seen in Dockerfile, it only copies Pipfile (for more information PROVIDE LINK HERE) and the codes found in ./src.
+
 **build.sh**
 ```
 set -euf -o pipefail
