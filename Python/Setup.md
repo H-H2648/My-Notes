@@ -52,6 +52,8 @@ COPY ./src ./src
 
 ```
 
+Please get pipenv (PROVIDE LINK HERE)
+
 **build.sh**
 ```
 set -euf -o pipefail
