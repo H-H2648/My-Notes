@@ -117,3 +117,5 @@ feature_store = FeatureStore('.')  # Initialize the feature store
 feature_service = feature_store.get_feature_service("driver_activity")
 features = feature_store.get_online_features(
     features=feature_service, entity_rows=[entity_dict]
+)
+```

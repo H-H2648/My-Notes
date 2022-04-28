@@ -1,0 +1,26 @@
+name: SOME TITLE
+description: SOME DESCRIPTION
+inputs:
+  - {
+    name: some name,
+    type: some type,
+    description: some description
+  }
+outputs :
+  - {
+    name: some name,
+    type: some type,
+    description: some description,
+  }
+
+# note SERVICE_NAME should be consistent as in build.sh and push.sh
+# sha code should be outputted in the terminal after running push.sh, you can also check out "us.gcr.io/{SERVICE_NAME}" directly
+implementation:
+  container:
+    image: "us.gcr.io/{SERVICE_NAME}@{SHA_CODE}"
+    command: [python3, src/main.py]
+    args: [
+      ## can either be an inputValue or inputPath
+      --variable-name, {inputValue: variable_name}
+      --output-path, {outputPath: output_variable_name},
+    ]
