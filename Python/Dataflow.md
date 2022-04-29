@@ -75,3 +75,5 @@ word_lengths = pipeline | beam.ParDo(ComputeWordLengthFn())
 ```
 
 Finally an template dataflow pipeline is found [here](./dataflow_pipeline_template)
+
+To check when it is running (on dataflow runner), on gcp go to `dataflow jobs`
